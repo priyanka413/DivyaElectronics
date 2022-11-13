@@ -1,0 +1,37 @@
+{% extends 'home/base.html' %}
+{% load static %}
+{% block title %}Food Processor{% endblock title %}
+{% block main-content %}
+
+<section class="inner-page">
+<div class="container my-5">
+ <div class="row">
+  <div class="col-sm-3">
+   <div class="list-group">
+   	<a href="{% url 'foodprocessor' %}" class="list-group-item
+   	list-group-item-action" aria-current="true">Food Processor</a>
+   </div>
+  </div>
+  <div class="col-sm-6">
+  	<div class="row">
+  	 {% for product in food_processor %}
+  	 <div class="col-sm-3 text-center mb-a">
+  	 <a href="{% url 'product-detail' product.id %}"
+  	 class="btn">
+  	 <div class="item">
+  	 <img src="{{product.product_image.url}}" alt=""
+  	 height="300" class="">
+  	 <div class="fw-blod">{{product.title}}</div>
+  	 <div class="fw-blod">{{product.discounted_price}}</div>
+  	 <small class="fw-light">{{product.selling_price}}</small></div>
+  	 </div>
+  	 </a>   
+     </div>
+     {% endfor %}
+     </div>
+   </div>
+  </div>
+</div>
+</div>
+</section>
+{% endblock main-content %}

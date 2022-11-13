@@ -1,0 +1,958 @@
+{% extends 'home/base.html' %}
+{% load static %}
+{% block title %}Home{% endblock title %}
+{% block main-content %}
+
+<section id="hero" class="hero d-flex align-items-center"> 	
+	<div class="container">
+      <div class="row">
+        <div class="col-lg-6 d-flex flex-column justify-content-center">
+          <h1 data-aos="fade-up">Live The KenLifeStyle With Divya Electronics</h1>
+          <div data-aos="fade-up" data-aos-delay="600">
+            <div class="text-center text-lg-start">
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 hero-img" data-aos="zoom-out" data-aos-delay="200">
+          <img src="{% static 'home/assets/img/Presentation2.jpg' %}" class="img-fluid" alt="">
+        </div>
+      </div>
+    </div>
+</section>
+
+
+<br>
+<br>
+<br>
+<br>
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .1} 
+  to {opacity: 11}
+}
+
+@keyframes fade {
+  from {opacity: .1} 
+  to {opacity: 11}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+</style>
+<body>
+
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  
+  <img src="{% static 'home/assets/img/kitchen6.jpg' %}" style="width:100%">
+  
+</div>
+
+<div class="mySlides fade">
+  
+  <img src="{% static 'home/assets/img/mixer.jpg' %}" style="width:100%">
+
+</div>
+
+<div class="mySlides fade">
+  
+  <img src="{% static 'home/assets/img/oxy fryer1.jpg' %}" style="width:100%">
+  
+</div>
+
+<div class="mySlides fade">
+  
+  <img src="{% static 'home/assets/img/sandwitch.jpg' %}" style="width:100%">
+  
+</div>
+
+<div class="mySlides fade">
+  
+  <img src="{% static 'home/assets/img/processor.jpg' %}" style="width:100%">
+  
+</div>
+
+<div class="mySlides fade">
+  
+  <img src="{% static 'home/assets/img/blender.jpg' %}" style="width:100%">
+  
+</div>
+
+<div class="mySlides fade">
+  
+  <img src="{% static 'home/assets/img/cooker.jpg' %}" style="width:100%">
+ 
+</div>
+
+<div class="mySlides fade">
+ 
+  <img src="{% static 'home/assets/img/juicer.jpg' %}" style="width:100%">
+  
+</div>
+
+<div class="mySlides fade">
+  
+  <img src="{% static 'home/assets/img/processor.jpg' %}" style="width:100%">
+
+</div>
+
+<div class="mySlides fade">
+  
+  <img src="{% static 'home/assets/img/cooking.jpg' %}" style="width:100%">
+  
+</div>
+
+<div class="mySlides fade">
+  
+  <img src="{% static 'home/assets/img/iron1.jpg' %}" style="width:100%">
+  
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i > dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 3000); // Change image every 3 seconds
+}
+</script>
+</body>
+
+<br>
+<br>
+<br>
+<br>
+
+
+
+<!-- ======= Video Section ======= -->
+<style>
+  body { text-align:center;}
+  </style>
+   <video width="720" height="480" controls >
+     <source src="{% static 'home/assets/videos/Live the Ken Lifestyle with Kenstar.MP4' %}" type="Video/MP4">
+   </video>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  </body>
+  
+  <br>
+  <br>
+  <br>
+  <br>
+
+
+
+<!-- ======= Values Section ======= -->
+<section id="values" class="values">
+
+  <div class="container" data-aos="fade-up">
+
+    <header class="section-header">
+    <p>Why Shop With Us</p>
+    </header>
+
+    <div class="row">
+
+    <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+      <div class="box">
+      <img src="{% static 'home/assets/img/fast.jpg' %}" class="img-fluid" alt="">
+      <h3>Fast Delivery</h3>
+      <p>Eum ad dolor et. Autem aut fugiat debitis voluptatem consequuntur sit. Et veritatis id.</p>
+      </div>
+    </div>
+
+    <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="400">
+      <div class="box">
+      <img src="{% static 'home/assets/img/freedelivery.jfif' %}" class="img-fluid" alt="">
+      <br>
+      <br>
+      <h3>Free Shipping</h3>
+      <p>Repudiandae amet nihil natus in distinctio suscipit id. Doloremque ducimus ea sit non.</p>
+      </div>
+    </div>
+
+    <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="600">
+      <div class="box">
+      <img src="{% static 'home/assets/img/bg.png' %}" class="img-fluid" alt="">
+      <h3>Best Quality</h3>
+      <p>Quam rem vitae est autem molestias explicabo debitis sint. Vero aliquid quidem commodi.</p>
+      </div>
+    </div>
+
+    </div>
+
+  </div>
+
+  </section><!-- End Values Section -->
+
+
+  
+ <!-- ======= Productslider Section ======= -->
+ <section id="portfolio" class="portfolio">
+
+  <div class="container" data-aos="fade-up">
+
+    <header class="section-header">
+    <p>Check our latest products</p>
+    </header>
+
+    <div class="row" data-aos="fade-up" data-aos-delay="100">
+    <div class="col-lg-12 d-flex justify-content-center">
+      <ul id="portfolio-flters">
+      <li data-filter="*" class="filter-active">All</li>
+      <li data-filter=".filter-mixers">Mixers Grinders</li>
+      <li data-filter=".filter-irons">Dry Irons</li>
+      <li data-filter=".filter-sandwitch">Sandwitch Maker</li>
+      <li data-filter=".filter-kettle">Electric Kettle</li>
+      <li data-filter=".filter-processor">Food Processor</li>
+      <li data-filter=".filter-juicer">Juicer</li>
+      <li data-filter=".filter-blender">Blender</li>
+      </ul>
+    </div>
+    </div>
+
+    <div class="row gy-4 portfolio-container" data-aos="fade-up" data-aos-delay="200">
+
+    <div class="col-lg-4 col-md-6 portfolio-item filter-mixers">
+      <div class="portfolio-wrap">
+      <img src="{% static 'home/assets/products/Grindee.png' %}" class="img-fluid"  alt="">
+      </div>
+    </div>
+
+    <div class="col-lg-4 col-md-6 portfolio-item filter-irons">
+      <div class="portfolio-wrap">
+      <img src="{% static 'home/assets/products/Ace-DX.png' %}" class="img-fluid" alt="">
+      
+      </div>
+    </div>
+
+    <div class="col-lg-4 col-md-6 portfolio-item filter-mixers">
+      <div class="portfolio-wrap">
+      <img src="{% static 'home/assets/products/Kovenia_Pro.png' %}" class="img-fluid" alt="">
+      
+      </div>
+    </div>
+
+    <div class="col-lg-4 col-md-6 portfolio-item filter-irons">
+      <div class="portfolio-wrap">
+      <img src="{% static 'home/assets/products/Glam-Pro.png' %}" class="img-fluid" alt="">
+      
+      </div>
+    </div>
+
+    <div class="col-lg-4 col-md-6 portfolio-item filter-mixers">
+      <div class="portfolio-wrap">
+      <img src="{% static 'home/assets/products/Maxxo.png' %}" class="img-fluid" alt="">
+      
+      </div>
+    </div>
+
+    <div class="col-lg-4 col-md-6 portfolio-item filter-irons">
+      <div class="portfolio-wrap">
+      <img src="{% static 'home/assets/products/Satina.png' %}" class="img-fluid" alt="">
+      
+      </div>
+    </div>
+
+    <div class="col-lg-4 col-md-6 portfolio-item filter-mixers">
+      <div class="portfolio-wrap">
+      <img src="{% static 'home/assets/products/Mixel_C.png' %}" class="img-fluid" alt="">
+      
+      </div>
+    </div>
+
+    <div class="col-lg-4 col-md-6 portfolio-item filter-sandwitch">
+      <div class="portfolio-wrap">
+      <img src="{% static 'home/assets/products/Grilli.png' %}" class="img-fluid" alt="">
+      
+      </div>
+    </div>
+
+    <div class="col-lg-4 col-md-6 portfolio-item filter-mixers">
+      <div class="portfolio-wrap">
+      <img src="{% static 'home/assets/products/Slender-Pro.png' %}" class="img-fluid" alt="">
+      
+      </div>
+    </div>
+
+    <div class="col-lg-4 col-md-6 portfolio-item filter-sandwitch">
+      <div class="portfolio-wrap">
+      <img src="{% static 'home/assets/products/snacky.png' %}" class="img-fluid" alt="">
+      
+      </div>
+    </div>
+
+    <div class="col-lg-4 col-md-6 portfolio-item filter-mixers">
+      <div class="portfolio-wrap">
+      <img src="{% static 'home/assets/products/Spacio.png' %}" class="img-fluid" alt="">
+      
+      </div>
+    </div>
+
+    <div class="col-lg-4 col-md-6 portfolio-item filter-kettle">
+      <div class="portfolio-wrap">
+      <img src="{% static 'home/assets/products/Estella.png' %}" class="img-fluid" alt="">
+      
+      </div>
+    </div>
+
+    <div class="col-lg-4 col-md-6 portfolio-item filter-mixers">
+      <div class="portfolio-wrap">
+      <img src="{% static 'home/assets/products/spin.png' %}" class="img-fluid" alt="">
+      
+      </div>
+    </div>
+
+    <div class="col-lg-4 col-md-6 portfolio-item filter-processor">
+      <div class="portfolio-wrap">
+      <img src="{% static 'home/assets/products/Karishma-Royal.png' %}" class="img-fluid" alt="">
+      
+      </div>
+    </div>
+
+    <div class="col-lg-4 col-md-6 portfolio-item filter-mixers">
+      <div class="portfolio-wrap">
+      <img src="{% static 'home/assets/products/Stallion-3J.png' %}" class="img-fluid" alt="">
+      
+      </div>
+    </div>
+
+    <div class="col-lg-4 col-md-6 portfolio-item filter-juicer">
+      <div class="portfolio-wrap">
+      <img src="{% static 'home/assets/products/Citro.png' %}" class="img-fluid" alt="">
+      
+      </div>
+    </div>
+
+    <div class="col-lg-4 col-md-6 portfolio-item filter-mixers">
+      <div class="portfolio-wrap">
+      <img src="{% static 'home/assets/products/Stallion-4J.png' %}" class="img-fluid" alt="">
+      
+      </div>
+    </div>
+
+
+    <div class="col-lg-4 col-md-6 portfolio-item filter-blender">
+      <div class="portfolio-wrap">
+      <img src="{% static 'home/assets/products/Smash.png' %}" class="img-fluid" alt="">
+      
+      </div>
+    </div>
+
+    <div class="col-lg-4 col-md-6 portfolio-item filter-mixers">
+      <div class="portfolio-wrap">
+      <img src="{% static 'home/assets/products/Taskee.png' %}" class="img-fluid" alt="">
+      
+      </div>
+    </div>
+
+    
+
+    <div class="col-lg-4 col-md-6 portfolio-item filter-mixers">
+      <div class="portfolio-wrap">
+      <img src="{% static 'home/assets/products/Taskee_5_C.png' %}" class="img-fluid" alt="">
+      
+      </div>
+    </div>
+
+    
+
+    <div class="col-lg-4 col-md-6 portfolio-item filter-mixers">
+      <div class="portfolio-wrap">
+      <img src="{% static 'home/assets/products/Tavam.png' %}" class="img-fluid" alt="">
+      
+      </div>
+    </div>
+
+    </div>
+
+  </div>
+
+  </section><!-- End Productslider Section -->    
+
+
+
+
+
+
+
+
+
+<!-- ======= Product slider2 Section ======= -->
+
+
+<style>
+body{
+  margin: 0px;
+  padding: 0px;
+}
+
+
+a{
+  text-decoration: none;
+}
+
+.product-slider{
+  padding: 0px 20px;
+  box-sizing: border-box;
+}
+
+
+
+.slider-heading{
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: 0px auto;
+  padding: 0px 20px;
+}
+
+.slider-heading h3{
+  font-size: 1.7rem;
+  color: #1d1d1f;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  line-height: 34px;
+}
+
+.slider-heading h3 span{
+  color: #6e6e73;
+}
+
+
+.product-box{
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  text-decoration: none;
+  background-color: #ffffff;
+  border-radius: 20px;
+  margin: 20px;
+  padding: 25px;
+  box-sizing: border-box;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+  border: 1px solid rgba(0,0,0,0.08);
+  overflow: hidden;
+  transition: all ease 0.3s;
+  border: 1px solid #000;
+  box-shadow: 10px 10px 10px 0 gray;
+  
+}
+
+.product-box strong{
+  color: #29292c;
+  font-size: 1.75rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  margin-top: 0px;
+}
+
+
+.product-box img{
+
+  width: 240px;
+  height: 240px;
+  display: flex;
+  padding: 14px 0px;
+  object-fit: contain;
+  object-position: center;
+  margin: 20px auto;
+  border: 1px solid #000;
+  box-shadow: 10px 10px 10px 0 gray;
+}
+
+
+
+.footer-back a{
+  text-decoration: none;
+  width: 120px;
+  display: inline-block;
+  text-align: center;
+  padding: 7px 5px;
+  border: 1px solid #fff;
+  color: #ffffff;
+  background-color: #0071e3;
+  margin-top: 30px;
+  border-radius: 20px;
+  transition: 0.5s;
+  margin: 12px 15px 0px;
+}
+
+
+.footer-back a:hover{
+    background: #000;
+  border: 1px solid #000; 
+}
+
+
+
+
+.lSPager{
+  display: none;
+}
+
+.lSAction > a{
+  background-color: #00000033;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-image: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.lSAction > a::after{
+  position: absolute;
+  content: '';
+  margin: auto;
+  border: solid #ffffff;
+  border-width: 0px 4px 4px 0px;
+  display: inline-block;
+  padding: 5px;
+}
+
+.lSAction > .lSPrev::after{
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+
+
+.lSAction > .lSNext::after{
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+
+.product-box:hover{
+  box-shadow: 2px 3px 8px rgba(0,0,0,0.10);
+  transform: scale(1.008);
+  transition: all ease 0.3s;
+}
+
+</style>
+
+
+
+
+<body>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/css/lightslider.css" integrity="sha512-+1GzNJIJQ0SwHimHEEDQ0jbyQuglxEdmQmKsu8KI7QkMPAnyDrL9TAnVyLPEttcTxlnLVzaQgxv2FpLCLtli0A==" crossorigin="anonymous" referrerpolicy="no-referrer" />  
+<script src="https://kit.fontawesome.com/2f8891ca8b.js" crossorigin="anonymous"></script>
+
+
+<section class="product-slider">
+
+  
+  <div class="slider-heading">
+    <h3>All Models Of Mixers.<span>Take Your Pick.</span></h3>
+  </div>
+
+  
+    <ul class="autoWidth" class="cs-hidden">
+
+    <!--  1  --> 
+    {% for m in mixergrinders %}      
+    <li class="item-a">     
+    <div class="product-box">
+      
+    
+      
+      <strong>{{m.title}}</strong>
+      
+      <img src="{{m.product_image.url}}">
+      <div class="footer-back">
+            <p><i class="fa-solid fa-rupee-sign"></i><b>= {{m.selling_price}}</b></p>
+            <a href="{% url 'product-detail' m.id %}">View Product</a>       
+      </div>      
+    </div>
+       
+          
+    </li>
+    {% endfor %}   
+
+    </ul>
+
+</section>  
+
+
+<br>
+<br>
+<br>
+
+
+<section class="product-slider"> 
+
+
+    <!--heading-->
+  <div class="slider-heading">
+    <h3>All Models Of Irons.<span>Take Your Pick.</span></h3>
+  </div>
+
+
+  <!--product-box-->
+  <ul class="autoWidth" class="cs-hidden"> 
+  
+
+   <!--  1  --> 
+    
+    {% for di in dryirons %}
+    <li class="item-a"> 
+    <div class="product-box"> 
+ 
+    
+      <!--heading-->
+      <strong>{{di.title}}</strong>
+      <!--img-->
+      <img src="{{di.product_image.url}}">
+      <div class="footer-back">
+            <p><i class="fa-solid fa-rupee-sign"></i><b> = {{di.selling_price}}</b></p>
+            <a href="{% url 'product-detail' di.id %}">View Product</a>   
+      </div>    
+    </div>  
+    </li>
+    {% endfor %} 
+    
+
+    </ul>
+
+
+</section>   
+
+
+<br>
+<br>
+<br>
+
+
+
+<section class="product-slider"> 
+
+
+    <!--heading-->
+  <div class="slider-heading">
+    <h3>All Models Of Sandwitchmaker.<span>Take Your Pick.</span></h3>
+  </div>
+
+
+  <!--product-box-->
+  <ul class="autoWidth" class="cs-hidden"> 
+  
+
+   <!--  1  --> 
+    
+    {% for sm in sandwitchmaker %}
+    <li class="item-a"> 
+    <div class="product-box"> 
+    
+      <!--heading-->
+      <strong>{{sm.title}}</strong>
+      <!--img-->
+      <img src="{{sm.product_image.url}}">
+      <div class="footer-back">
+            <p><i class="fa-solid fa-rupee-sign"></i><b> = {{sm.selling_price}}</b></p>
+            <a href="{% url 'product-detail' sm.id %}">View Product</a>
+      </div>  
+    </div>  
+    </li>
+    {% endfor %}
+    
+
+
+    <!--  2  --> 
+    
+ 
+    </ul>
+
+
+</section>
+
+
+<br>
+<br>
+<br>
+
+
+
+<section class="product-slider"> 
+
+
+    <!--heading-->
+  <div class="slider-heading">
+    <h3>Model Of FoodProcessor.<span>Take Your Pick.</span></h3>
+  </div>
+
+
+  <!--product-box-->
+  <ul class="autoWidth" class="cs-hidden"> 
+  
+
+   <!--  1  --> 
+    
+    
+    <li class="item-a"> 
+    <div class="product-box"> 
+    {% for fp in foodprocessor %} 
+      <!--heading-->
+      <strong>{{fp.title}}</strong>
+      <!--img-->
+      <img src="{{fp.product_image.url}}">
+      <div class="footer-back">
+            <p><i class="fa-solid fa-rupee-sign"></i><b> = {{fp.selling_price}}</b></p>
+            <a href="{% url 'product-detail' fp.id %}">View Product</a>
+      </div> 
+    {% endfor %}   
+    </div>  
+    </li>
+    
+ 
+    </ul>
+
+
+</section>
+
+
+
+<br>
+<br>
+<br>
+
+
+
+<section class="product-slider"> 
+
+
+    <!--heading-->
+  <div class="slider-heading">
+    <h3>Model Of Juicer.<span>Take Your Pick.</span></h3>
+  </div>
+
+
+  <!--product-box-->
+  <ul class="autoWidth" class="cs-hidden"> 
+  
+
+   <!--  1  --> 
+    
+    
+    <li class="item-a"> 
+    <div class="product-box"> 
+    {% for j in juicers %} 
+      <!--heading-->
+      <strong>{{j.title}}</strong>
+      <!--img-->
+      <img src="{{j.product_image.url}}">
+      <div class="footer-back">
+            <p><i class="fa-solid fa-rupee-sign"></i><b> = {{j.selling_price}}</b></p>
+            <a href="{% url 'product-detail' j.id %}">View Product</a>
+      </div>
+     {% endfor %}    
+     </div>  
+    </li>
+    
+ 
+    </ul>
+
+
+</section>
+
+
+
+<br>
+<br>
+<br>
+
+
+
+
+<section class="product-slider"> 
+
+
+    <!--heading-->
+  <div class="slider-heading">
+    <h3>Model Of Blender.<span>Take Your Pick.</span></h3>
+  </div>
+
+
+  <!--product-box-->
+  <ul class="autoWidth" class="cs-hidden"> 
+  
+
+   <!--  1  --> 
+    
+    
+    <li class="item-a"> 
+    <div class="product-box"> 
+    {% for hb in handblender %}
+      <!--heading-->
+      <strong>{{hb.title}}</strong>
+      <!--img-->
+      <img src="{{hb.product_image.url}}">
+      <div class="footer-back">
+            <p><i class="fa-solid fa-rupee-sign"></i><b> = {{hb.selling_price}}</b></p>
+            <a href="{% url 'product-detail' hb.id %}">View Product</a>
+      </div>
+    {% endfor %}  
+    </div>  
+    </li>
+    
+ 
+    </ul>
+
+
+</section>
+
+
+
+<br>
+<br>
+<br>
+
+
+
+<section class="product-slider"> 
+
+
+    <!--heading-->
+  <div class="slider-heading">
+    <h3>Model Of Electric Kettle.<span>Take Your Pick.</span></h3>
+  </div>
+
+
+  <!--product-box-->
+  <ul class="autoWidth" class="cs-hidden"> 
+  
+
+   <!--  1  --> 
+    
+    
+    <li class="item-a"> 
+    <div class="product-box"> 
+    {% for ek in electrickettel %} 
+      <!--heading-->
+      <strong>{{ek.title}}</strong>
+      <!--img-->
+      <img src="{{ek.product_image.url}}">
+      <div class="footer-back">
+            <p><i class="fa-solid fa-rupee-sign"></i><b> = {{ek.selling_price}}</b></p>
+            <a href="{% url 'product-detail' ek.id %}">View Product</a>
+      </div>  
+    {% endfor %}
+    </div>  
+    </li>
+    
+ 
+    </ul>
+
+
+</section>
+   
+   
+ 
+
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/js/lightslider.min.js" integrity="sha512-Gfrxsz93rxFuB7KSYlln3wFqBaXUc1jtt3dGCp+2jTb563qYvnUBM/GP2ZUtRC27STN/zUamFtVFAIsRFoT6/w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+<script>
+  jQuery(document).ready(function($){
+    $(document).ready(function() {
+      $('.autoWidth').lightSlider({
+          autoWidth:true,
+          loop:true,
+          onSliderLoad: function() {
+              $('.autoWidth').removeClass('cS-hidden');
+          } 
+          
+      });  
+    });
+  });
+</script>
+
+
+
+{% endblock main-content %}  
+
+
+
+
+
+
+   
